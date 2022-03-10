@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+  color: white;
+  font-weight: 400;
+  background-image: linear-gradient(to top left, #05502a 0%, #068646 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(200px);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
+  filter: blur();
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.coins {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 2rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #444;
+  background: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.322);
+  /* border-radius: 100px; */
+}
+
+.btn--5-coin {
+  bottom: 7rem;
+  left: 25rem;
+  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 100px;
+}
+
+.btn--10-coin {
+  bottom: 7rem;
+  left: 40rem;
+  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 100px;
+}
+
+.btn--50-coin {
+  bottom: 7rem;
+  left: 55rem;
+  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 100px;
+}
+
+.btn--100-coin {
+  bottom: 7rem;
+  left: 72rem;
+  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 100px;
+}
+
+.btn--clear {
+  left: 33rem;
+  bottom: 19rem;
+}
+
+.btn--deal {
+  left: 65rem;
+  bottom: 19rem;
+}
+
+.bet {
+  position: relative;
+  left: 45rem;
+  /* bottom: 20rem; */
+  top: 35rem;
+  font-size: 2rem;
+}
+
+.btn--double {
+  bottom: 15rem;
+  left: 47rem;
+}
+
+.btn--hit {
+  bottom: 15rem;
+  left: 63rem;
+}
+
+.btn--stand {
+  bottom: 15rem;
+  left: 32rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.welcome-para {
+  position: absolute;
+  left: 35%;
+  top: 12rem;
+  font-size: 3rem;
+}
+
+.bet-para{
+    position: relative;
+    height: fit-content;
+    left: 40%;
+    top : 42rem;
+    font-size: 2rem;
+}
+
+.card{
+    position: absolute;
+    left: 40%;
+    top : 50%;
+    width: 10vh;
+    height: 15vh;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.card0{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+}
