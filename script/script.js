@@ -15,14 +15,57 @@ const dealBtn = document.querySelector('.btn--deal')
 const welcomePara = document.querySelector('.welcome-para')
 const betPara = document.querySelector('.bet-para')
 const hitBtn = document.querySelector('.btn--hit')
-const cardEl = document.querySelector('.card')
+const cardEl1 = document.getElementById('card-1')
+const cardEl2 = document.getElementById('card-2')
 
 let num = 0
 let remainingCoins = 2000
 
-const randomNum = function(){
-    return Math.trunc(Math.random() * 13)+ 1
+const randomCard = function(cardEl){
+  const randomNum = Math.trunc(Math.random() * 13) + 1
+  switch (randomNum) {
+    case 1:
+      cardEl.src = 'images/card-1.png'
+      break
+    case 2:
+      cardEl.src = 'images/card-2.png'
+      break
+    case 3:
+      cardEl.src = 'images/card-3.webp'
+      break
+    case 4:
+      cardEl.src = 'images/card-4.webp'
+      break
+    case 5:
+      cardEl.src = 'images/card-5.webp'
+      break
+    case 6:
+      cardEl.src = 'images/card-6.webp'
+      break
+    case 7:
+      cardEl.src = 'images/card-7.png'
+      break
+    case 8:
+      cardEl.src = 'images/card-8.png'
+      break
+    case 9:
+      cardEl.src = 'images/card-9.webp'
+      break
+    case 10:
+      cardEl.src = 'images/card-10.webp'
+      break
+    case 11:
+      cardEl.src = 'images/card-11.png'
+      break
+    case 12:
+      cardEl.src = 'images/card-12.jpg'
+      break
+    default:
+      cardEl.src = 'images/card-13.jpg'
+  }
 }
+
+
 
 betCoins.addEventListener('click', function () {
   beforePlayBtns.classList.remove('hidden')
@@ -71,11 +114,13 @@ dealBtn.addEventListener('click', function () {
     betCoins.classList.add('hidden')
     beforePlayBtns.classList.add('hidden')
     afterPlayBtns.classList.remove('hidden')
-    cardEl.classList.remove('hidden')
-    cardEl.src = `images/card-${randomNum}.png`
+    cardEl1.classList.remove('hidden')
+    cardEl2.classList.remove('hidden')
+    randomCard(cardEl1)
+    randomCard(cardEl2)
   }
 })
 
-hitBtn.addEventListener('click', function(){
-
+hitBtn.addEventListener('click', function () {
+  
 })
